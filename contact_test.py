@@ -28,6 +28,14 @@ class TestContact(unittest.TestCase):
         self.assertEqual(self.new_contact.phone_number, "0712345678")
         self.assertEqual(self.new_contact.email, "james@ms.com")
 
+    def test_save_contact(self):
+        '''
+        test_save_contact test case to test if the contact object is saved into
+         the contact list
+        '''
+        self.new_contact.save_contact()  # saving the new contact
+        self.assertEqual(len(Contact.contact_list), 1)
+
 
 if __name__ == '__main__':
     unittest.main()
