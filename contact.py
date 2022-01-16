@@ -57,6 +57,7 @@ class Contact:
         for contact in cls.contact_list:
             if contact.phone_number == number:
                 return True
+        return False
 
     @classmethod
     def display_contacts(cls):
