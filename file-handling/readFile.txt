@@ -1,9 +1,4 @@
-handle = open("test.txt","r")
+handle = open("text-write.txt","w")
 
-data = handle.read()
-counter = 0
-for word in data.split():
-      if word == "Python":
-         counter +=1
-
-print(counter)
+handle.write("Hello jimmy")
+handle.close()

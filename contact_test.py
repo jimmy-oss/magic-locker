@@ -56,19 +56,8 @@ class TestContact(unittest.TestCase):
         Contact.contact_list = []
 
 
-# other test cases here
-
-    def test_save_multiple_contact(self):
-        '''
-         test_save_multiple_contact to check if we can save multiple contact
-         objects to our contact_list
-        '''
-        self.new_contact.save_contact()
-        test_contact = Contact("Test", "user", "0712345678",
-                               "test@user.com")  # new contact
-        test_contact.save_contact()
-        self.assertEqual(len(Contact.contact_list), 2)
 # More tests above
+
 
     def test_delete_contact(self):
         '''
